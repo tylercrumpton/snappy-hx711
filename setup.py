@@ -3,9 +3,14 @@
 
 from setuptools import setup
 
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
 setup(
     name='snappy-hx711',
     description="Synapse SNAPpy library for HX711 Load Cell Amplifier/ADC",
+    long_description=readme(),
     maintainer='Tyler Crumpton',
     maintainer_email='tyler.crumpton@gmail.com',
     url='https://github.com/tylercrumpton/snappy-hx711',
